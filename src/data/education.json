@@ -1,0 +1,19 @@
+[
+  {
+    "institution_name": "Universidad Pontificia Bolivariana, Bucaramanga",
+    "start_year": "2020",
+    "end_year": "2024",
+    "description_content": [
+      "As a Systems and Computing Engineer, I have solid foundations in the whole life cycle of software development, from the analysis and design, to the implementation and maintenance.",
+      "Thanks to a project-based learning methodology, I have developed teamwork skills and a problem-solving mindset."
+    ]
+  },
+  {
+    "institution_name": "Platzi",
+    "start_year": "2022",
+    "end_year": "2022",
+    "description_content": [
+      "I've taken around 60 courses on Software Development. Moreover, I've completed the \"Full Stack Developer with JavaScript\" career path, which includes 20 courses, multiple hands-on projects, and a final exam, receiving a physical diploma."
+    ]
+  }
+]

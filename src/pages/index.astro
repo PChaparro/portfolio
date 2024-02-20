@@ -1,7 +1,8 @@
 ---
 import "@fontsource/geist-mono";
 
-import Header from "../components/header/header.astro";
+import HeaderSection from "../components/header/header-section.astro";
+import EducationSection from "../components/education/education-section.astro";
 ---
 
 <html lang="en">
@@ -10,9 +11,12 @@ import Header from "../components/header/header.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Pedro's portfolio</title>
+    <title>Pedro Chaparro's portfolio</title>
   </head>
-  <body class="bg-neutral-50 max-w-prose mx-auto p-4 text-primary">
-    <Header />
+  <body class="bg-neutral-50 max-w-prose mx-auto p-4">
+    <main class="text-primary space-y-8">
+      <HeaderSection />
+      <EducationSection />
+    </main>
   </body>
 </html>

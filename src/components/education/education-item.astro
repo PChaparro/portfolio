@@ -1,0 +1,32 @@
+---
+import Paragraph from "../ui/paragraph.astro";
+
+type EducationItem = {
+  institution_name: string;
+  start_year: string;
+  end_year: string;
+  description_content: string[];
+};
+
+interface Props {
+  item: EducationItem;
+}
+
+const {
+  item: { institution_name, start_year, end_year, description_content }
+} = Astro.props;
+---
+
+<article class="space-y-2 text-primary/75">
+  <div class="flex justify-between items-center gap-2 flex-wrap">
+    <h3 class="font-semibold text-lg text-primary">
+      {institution_name}
+    </h3>
+    <span>{start_year} - {end_year}</span>
+  </div>
+  {
+    description_content.map((content) => (
+      <Paragraph size="md">{content}</Paragraph>
+    ))
+  }
+</article>
