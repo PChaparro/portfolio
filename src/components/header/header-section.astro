@@ -6,7 +6,7 @@ import Paragraph from "../ui/paragraph.astro";
 import SocialBadge from "../ui/social-badge.astro";
 ---
 
-<header class="flex flex-col space-y-4">
+<header class="flex flex-col space-y-4" id="about">
   <h1 class="font-bold text-4xl">{full_name}'s portfolio</h1>
   {bio_content.map((content) => <Paragraph>{content}</Paragraph>)}
   <ul class="text-primary flex gap-4">
