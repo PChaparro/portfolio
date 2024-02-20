@@ -1,0 +1,21 @@
+{
+  "full_name": "Pedro Chaparro",
+  "bio_content": [
+    "I'm a full-stack developer, passionate about web development. During my college years, I actively contributed to various projects, taking on different roles in both front-end and back-end development.",
+    "I'm looking for new opportunities to apply my knowledge, learn and grow as a professional. I'm open to learning new technologies by using a hands-on approach."
+  ],
+  "socials": [
+    {
+      "iconName": "bi:linkedin",
+      "url": "https://www.linkedin.com/in/pedro-andres-chaparro/"
+    },
+    {
+      "iconName": "bi:github",
+      "url": "https://github.com/PedroChaparro"
+    },
+    {
+      "iconName": "bi:github",
+      "url": "https://github.com/PChaparro"
+    }
+  ]
+}

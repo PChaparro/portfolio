@@ -1,0 +1,23 @@
+---
+interface Props {
+  className?: string;
+  size?: "sm" | "md";
+}
+
+const sizeClasses = {
+  sm: "text-sm",
+  md: "text-lg"
+};
+
+const { className, size = "md" } = Astro.props;
+---
+
+<p
+  class:list={[
+    "text-pretty text-primary/75 leading-relaxed",
+    sizeClasses[size],
+    className
+  ]}
+>
+  <slot />
+</p>
