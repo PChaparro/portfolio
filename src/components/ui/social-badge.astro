@@ -1,18 +1,30 @@
 ---
 import { Icon } from "astro-icon/components";
 
-interface Props {
+type SocialItem = {
   iconName: string;
   url: string;
+  anchor_label: string;
+};
+
+interface Props {
+  item: SocialItem;
 }
 
-const { iconName, url } = Astro.props;
+const {
+  item: { iconName, url, anchor_label }
+} = Astro.props;
 ---
 
 <div
   class="border p-2 rounded-md border-primary/15 text-primary/85 transition-colors hover:text-primary hover:bg-primary/5"
 >
-  <a href={url} target="_blank" rel="noopener noreferrer">
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={anchor_label}
+  >
     <Icon name={iconName} size={20} />
   </a>
 </div>

@@ -7,15 +7,18 @@
   "socials": [
     {
       "iconName": "bi:linkedin",
-      "url": "https://www.linkedin.com/in/pedro-andres-chaparro/"
+      "url": "https://www.linkedin.com/in/pedro-andres-chaparro/",
+      "anchor_label": "Go to my LinkedIn profile"
     },
     {
       "iconName": "bi:github",
-      "url": "https://github.com/PedroChaparro"
+      "url": "https://github.com/PedroChaparro",
+      "anchor_label": "Go to my University GitHub profile"
     },
     {
       "iconName": "bi:github",
-      "url": "https://github.com/PChaparro"
+      "url": "https://github.com/PChaparro",
+      "anchor_label": "Go to my personal GitHub profile"
     }
   ]
 }

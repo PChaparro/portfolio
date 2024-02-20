@@ -13,7 +13,7 @@ import SocialBadge from "../ui/social-badge.astro";
     {
       socials.map((social) => (
         <li>
-          <SocialBadge iconName={social.iconName} url={social.url} />
+          <SocialBadge item={social} />
         </li>
       ))
     }
