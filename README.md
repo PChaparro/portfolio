@@ -1,47 +1,15 @@
-# Astro Starter Kit: Minimal
+# Minimal Portfolio Website 🚀
 
-```sh
-npm create astro@latest -- --template minimal
-```
+This is a personal portfolio website that showcases my work and skills as a developer. The idea is to have a minimal and clean design that provides all the necessary information to recruiters and potential clients.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## How to modify for your own use 🤔
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Once you've forked / cloned the repository, you can modify the following files to display your own information:
 
-## 🚀 Project Structure
+1. [`index.astro` file](./src/pages/index.astro): This is the main file that contains the markup for the website. Make sure to modify the `<title>` and `<meta>` tags to match your own information.
 
-Inside of your Astro project, you'll see the following folders and files:
+2. [`data` directory](./src/data/): This directory contains all the data that is shown on the website. You can modify the `.json` files to include your own information.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+3. [`public/images` directory](./public/images/): This directory contains all the images that are used in the website. Replace these, specially the project images, with your own.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+I recommend you to use the [`Shots`](https://shots.so/) app to create mockups of your projects and the [`Squoosh`](https://squoosh.app/) web app to compress your images before using them in the website. You should also consider using the [`.webp`](https://developers.google.com/speed/webp) format for your images to reduce the page load time.
