@@ -1,14 +1,15 @@
 ---
 const navigationItems = [
   { text: "About", href: "#about" },
+  { text: "Projects", href: "#projects" },
   { text: "Education", href: "#education" }
 ];
 ---
 
 <nav
-  class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 border border-primary/15 rounded-lg shadow-md overflow-hidden animate-fade"
+  class="w-[calc(100vw-4rem)] max-w-max fixed bottom-8 left-1/2 -translate-x-1/2 z-50 border rounded-lg shadow-md overflow-hidden animate-fade bg-white"
 >
-  <ul class="flex text-primary/85 flex-wrap">
+  <ul class="flex text-primary/85 flex-wrap items-center justify-center">
     {
       navigationItems.map((item) => (
         <li class="transition-colors hover:text-primary hover:bg-primary/5 text-sm">
