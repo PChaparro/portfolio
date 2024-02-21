@@ -1,0 +1,52 @@
+[
+  {
+    "imageURL": "/images/projects/codelabs-mockup.webp",
+    "imageAlt": "A mockup showing the landing page of the Code Labs project",
+    "title": "Code Labs",
+    "description_content": [
+      "As my final year project, I build a microservices-based platform for professors and students in my college.",
+      "The platform allows teachers to create, monitor and grade programming-based learning activities for their students."
+    ],
+    "previewURL": "https://codelabs.bucaramanga.upb.edu.co/",
+    "codeURL": "https://github.com/upb-code-labs"
+  },
+  {
+    "imageURL": "/images/projects/loomies-mockup.webp",
+    "imageAlt": "A mockup showing the map and combat interface of the Loomies project",
+    "title": "Loomies (A pokemon go-like game)",
+    "description_content": [
+      "My featured contributions were enabling real-time message passing for in-game battles and implementing the continuous integration and deployment pipelines."
+    ],
+    "codeURL": "https://github.com/PedroChaparro/loomies-mobile"
+  },
+  {
+    "imageURL": "/images/projects/capyfile-mockup.webp",
+    "imageAlt": "A mockup showing the landing page of the Capyfile project",
+    "title": "Capyfile (A cloud storage SaaS)",
+    "description_content": [
+      "As a front-end developer, I built most of the Web client using React and created end-to-end tests with Playwright.",
+      "I also contributed to the back-end by implementing a REST micro-service in Scala and some of the continuous integration pipelines."
+    ],
+    "codeURL": "https://github.com/PedroChaparro/alternative-frontend-react"
+  },
+  {
+    "imageURL": "/images/projects/search-engine-mockup.webp",
+    "imageAlt": "A mockup showing the single page interface of the search engine project",
+    "title": "Search engine",
+    "description_content": [
+      "In this project, I built a web scraper in Golang to collect data from Youtube videos and then indexed it in Elasticsearch.",
+      "A front-end interface was developed with React to allow users to search for videos and display the results."
+    ],
+    "codeURL": "https://github.com/PChaparro/search-engine"
+  },
+  {
+    "imageURL": "/images/projects/wearcar-mockup.webp",
+    "imageAlt": "A mockup showing the product page of the Wearcar project",
+    "title": "Wearcar (An e-commerce of car accessories)",
+    "description_content": [
+      "I contributed to both the back-end, implementing stored procedures, triggers, and views in MySQL, and the front-end, developing sections of the website using EJS.",
+      "I was involved in a team that had to use the SCRUM methodology to manage the project."
+    ],
+    "codeURL": "https://github.com/SilviaPabon/AUTO-UPB"
+  }
+]

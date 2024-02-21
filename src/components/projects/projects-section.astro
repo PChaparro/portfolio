@@ -1,0 +1,17 @@
+---
+import projectsData from "../../data/projects.json";
+import ProjectItem from "./project-item.astro";
+---
+
+<section class="space-y-4" id="projects">
+  <h2 class="font-bold text-3xl">Featured Projects</h2>
+  <ul class="space-y-8">
+    {
+      projectsData.map((project) => (
+        <li>
+          <ProjectItem item={project} />
+        </li>
+      ))
+    }
+  </ul>
+</section>

@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon/components";
+import Paragraph from "../ui/paragraph.astro";
+
+interface ProjectItem {
+  imageURL: string;
+  imageAlt: string;
+  title: string;
+  description_content: string[];
+  previewURL?: string;
+  codeURL?: string;
+}
+
+interface Props {
+  item: ProjectItem;
+}
+
+const { item } = Astro.props;
+const { previewURL, codeURL } = item;
+const showButtonsSection = previewURL || codeURL;
+---
+
+<article class="grid sm:grid-cols-2 gap-4 rounded-xl overflow-hidden">
+  <img
+    src={item.imageURL}
+    alt={item.imageAlt}
+    class="rounded-lg"
+    width="290"
+    height="220"
+  />
+  <div class="space-y-2">
+    <h3 class="font-semibold text-lg text-primary">
+      {item.title}
+    </h3>
+    {
+      item.description_content.map((content) => (
+        <Paragraph size="md">{content}</Paragraph>
+      ))
+    }
+    {
+      showButtonsSection && (
+        <div class="text-primary/75 flex gap-4">
+          {previewURL && (
+            <a
+              href={previewURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-x-2 border p-2 text-sm text-primary/85 transition-colors hover:text-primary hover:bg-primary/5 rounded-md"
+            >
+              <Icon name="bi:link-45deg" size={20} />
+              Preview
+            </a>
+          )}
+          {codeURL && (
+            <a
+              href={codeURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-x-2 border p-2 text-sm text-primary/85 transition-colors hover:text-primary hover:bg-primary/5 rounded-md"
+            >
+              <Icon name="bi:code" size={20} />
+              Code
+            </a>
+          )}
+        </div>
+      )
+    }
+  </div>
+</article>

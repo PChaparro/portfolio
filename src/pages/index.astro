@@ -4,10 +4,11 @@ import "@fontsource/geist-mono";
 import Navbar from "../components/ui/navbar.astro";
 
 import HeaderSection from "../components/header/header-section.astro";
+import ProjectsSection from "../components/projects/projects-section.astro";
 import EducationSection from "../components/education/education-section.astro";
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -21,6 +22,7 @@ import EducationSection from "../components/education/education-section.astro";
     <Navbar />
     <main class="text-primary space-y-8">
       <HeaderSection />
+      <ProjectsSection />
       <EducationSection />
     </main>
   </body>
