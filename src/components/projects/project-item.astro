@@ -1,11 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
+
 import Paragraph from "../ui/paragraph.astro";
+import TechBadge from "../ui/tech-badge.astro";
 
 interface ProjectItem {
   imageURL: string;
   imageAlt: string;
   title: string;
+  tech_stack: string[];
   description_content: string[];
   previewURL?: string;
   codeURL?: string;
@@ -34,6 +37,15 @@ const showButtonsSection = previewURL || codeURL;
     <h3 class="font-semibold text-lg text-primary">
       {item.title}
     </h3>
+    <ul class="flex gap-2 flex-wrap">
+      {
+        item.tech_stack.map((tech) => (
+          <li>
+            <TechBadge name={tech} />
+          </li>
+        ))
+      }
+    </ul>
     {
       item.description_content.map((content) => (
         <Paragraph size="md">{content}</Paragraph>
