@@ -20,7 +20,9 @@ const { previewURL, codeURL } = item;
 const showButtonsSection = previewURL || codeURL;
 ---
 
-<article class="grid sm:grid-cols-2 gap-4 rounded-xl overflow-hidden">
+<article
+  class="grid sm:grid-cols-2 gap-4 rounded-xl overflow-hidden intersect:animate-fade-up"
+>
   <img
     src={item.imageURL}
     alt={item.imageAlt}

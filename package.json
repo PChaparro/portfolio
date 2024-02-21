@@ -24,6 +24,7 @@
     "@iconify-json/bi": "^1.1.23",
     "prettier-plugin-astro": "0.13.0",
     "prettier-plugin-tailwindcss": "0.5.11",
-    "tailwindcss-animated": "^1.0.1"
+    "tailwindcss-animated": "^1.0.1",
+    "tailwindcss-intersect": "^1.0.5"
   }
 }
